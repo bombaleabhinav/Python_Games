@@ -8,7 +8,23 @@ time.sleep(0.5)
 print("Good Luck!")
 
 computer_guess = random.randint(0,1000)
-user__guess = int(input("Enter your firs guess: "))
+user_guess = int(input("Enter your first guess: "))
 
 
-while computer_guess==
+for i in range(7):
+    if user_guess==computer_guess:
+        print("You Win")
+        time.sleep(0.5)
+    else:
+        if user_guess>computer_guess:
+            print("Lower! ")
+        else:
+            print("Higher! ")
+        user_guess= int(input("Enter your next guess: "))
+
+if user_guess==computer_guess:
+    print("You win! ")
+
+else:
+    print("You are a Loser! ")
+
